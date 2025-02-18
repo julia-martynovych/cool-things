@@ -1,9 +1,19 @@
+body {
+    background-color: black;
+}
+
 /* Blur all non-hovered icons when one is hovered */
+
+.icons-container{
+    display: flex;
+   justify-content: center;
+   
+}
 
 .button__nav {
     border: none;
-    background-color: white;
-    color: rgb(79, 21, 86);
+    background-color: rgb(0, 0, 0);
+    color: rgb(180, 98, 189);
     font-size: 18px;
 }
 
@@ -15,4 +25,40 @@
 .icons-container:has(:hover) :not(:hover) {
     scale: 0.8;
     filter: blur(2px);
+}
+
+/* Boxes */
+.boxes {
+    display: flex;
+   justify-content: space-around;
+}
+.box1 {
+    margin-top: 20px;
+width: 100px;
+height: 100px;
+border: 5px yellow dashed;
+}
+.box2 {
+    margin-top: 20px;
+    width: 100px;
+    height: 100px;
+    border: 5px yellow dotted;
+}
+.box3 {
+    margin-top: 20px;
+    width: 100px;
+    height: 100px;
+    border: 5px yellow double;
+}
+.box4 {
+    margin-top: 20px;
+    width: 100px;
+    height: 100px;
+    border: 5px yellow groove;
+}
+.box5 {
+    margin-top: 20px;
+    width: 100px;
+    height: 100px;
+    border: 5px yellow ridge;
 }
