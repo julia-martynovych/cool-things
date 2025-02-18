@@ -1,0 +1,18 @@
+/* Blur all non-hovered icons when one is hovered */
+
+.button__nav {
+    border: none;
+    background-color: white;
+    color: rgb(79, 21, 86);
+    font-size: 18px;
+}
+
+
+.icons-container * {
+    transition: scale 300ms, filter 300ms;
+}
+
+.icons-container:has(:hover) :not(:hover) {
+    scale: 0.8;
+    filter: blur(2px);
+}
